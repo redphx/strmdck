@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=70", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "strmdck"
+version = "0.1.0-rc1"
+description = "Python library to control Stream Deck-like devices"
+authors = [{name = "redphx"}]
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE"}
+keywords = ["streamdeck", "stream deck", "stream-deck"]
+requires-python = ">=3.9"
+dependencies = [
+    "construct==2.10.70",
+    "pytest==8.3.4",
+    "hidapi==0.14.0.post4",
+]
+
+[project.urls]
+Homepage = "https://github.com/redphx/strmdck"
+Issues = "https://github.com/redphx/strmdck/issues"
+Repository = "https://github.com/redphx/strmdck.git"
